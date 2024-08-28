@@ -18,6 +18,7 @@ body {
 
 .navbar-brand {
     font-family: "DM Serif Display", serif;
+    color: rgb(201, 94, 110);
 }
 
 .nav-item {
@@ -49,10 +50,10 @@ body {
 
 h1, h2 {
     margin: 0;
+    font-family: "Noto Serif", serif;
 }
 
 h1 {
-    font-family: "Noto Serif", serif;
     font-weight: 500;
     font-size: 3.25rem;
 }
