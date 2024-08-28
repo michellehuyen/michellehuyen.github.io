@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: "DM Sans", sans-serif;
     overflow-x: hidden;
     background: url('./imgs/holographic.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -13,6 +14,10 @@ body {
 .navbar-nav {
     display: flex;
     align-items: center;
+}
+
+.navbar-brand {
+    font-family: "DM Serif Display", serif;
 }
 
 .nav-item {
@@ -47,9 +52,9 @@ h1, h2 {
 }
 
 h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Serif", serif;
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 3.25rem;
 }
 
 h2 {
