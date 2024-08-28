@@ -1,165 +1,128 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-* p {
-    font-family: 'Open Sans';
-    font-size: 18px;
 }
 
 body {
-    font-family: 'Open Sans';
-}
-
-/* NAVBAR STUFF */
-.navbar {
-    justify-content: right;
-    background-color: rgb(199 207 199);
-    opacity: 0.95;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    z-index: 1;
+    overflow-x: hidden;
+    background: url('./imgs/holographic.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .navbar-nav {
-    list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .nav-item {
-    padding: 20px 35px;
+    padding: 0px 5px;
 }
 
-.nav-link {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
+.fade-in {
+    animation: fade-in 2s ease-in-out;
 }
 
-.navbar ul a:hover {
-    text-decoration: none;
-    background-color: #A9BD93;
-    opacity: 0.9;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px white;
-    /* box-shadow: 0 0 10px rgb(141 149 132); */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-/* HOMEPAGE STUFF */
-#home {
-    font-family: 'Raleway';
-    background: url(img/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    padding: 10rem 0rem;
-    color: #bd454a;
-    font-size: 3rem;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+.about-container {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    z-index: 1;
 }
 
-.home-content {
-    text-align: center;
-    padding-top: 6rem;
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
 }
 
 h2 {
-    margin-top: 3rem;
-    font-family: 'Open Sans';
-    font-size: 25px;
-    color: white;
+    font-size: 1.65rem;
 }
 
-/* ABOUT ME & RESUME BUTTON HOMEPAGE */
-.link {
-    font-family: 'Raleway';
-    font-weight: 100;
-    text-decoration: none;
-    color: white;
-}
-
-button {
-    margin: 3rem 1rem;
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 20px;
-    background-color: rgb(141 149 132);
-    border: solid rgb(141 149 132);
-}
-
-button:hover {
-    border-color: #A9BD93;
-    box-shadow: 0 0 10px white;
-    background-color: #A9BD93;
-}
-
-/* ABOUT ME STUFF */
-#about {
-    font-family: 'Raleway';
-    background-color: #fffaf0;
-    display: flex;
-}
-
-#huyenexplores {
-    text-decoration: none;
-    color: brown;
-}
-
-#huyenexplores:hover {
-    color: rgba(165, 42, 42, 0.788);
-}
-
-.about, .contact-header {
-    color: black;
-    font-size: 30px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    padding: 30px 80px 50px;
-    /* margin-top: -50px; */
+p {
+    font-size: 1.2rem;
 }
 
 #me {
-    border-radius: 5px;
-    box-shadow: 30px 30px rgba(165, 42, 42, 0.788);
+    max-width: 75%;
+    height: auto;
+    border-radius: 50%;
 }
 
-.col-sm-7, .col-sm-5 {
-    padding: 30px;
+.slide-in-text {
+    animation: slide-in-text 1000ms ease-in-out;
+    margin: auto;
 }
 
-/* CONTACT STUFF */
-#contact {
-    justify-content: center;
-    display: flex;
-    padding: 30px 50px 20px;
+@keyframes slide-in-text {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
-.contact-header {
-    font-family: 'Open Sans';
-    font-weight: 100;
-    text-align: center;
-    font-size: 50px;
+.slide-in-img {
+    animation: slide-in-img 1000ms ease-in-out;
+    align-items: center;
 }
 
-.linked-icon {
-    margin: 40px 0px;
+@keyframes slide-in-img {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
-.icon {
+.resume-btn {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(200deg, #e66465, #9198e5);
+    padding: 15px 30px;
+    box-shadow: 4px 4px 15px rgba(255, 0, 102, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.resume-btn:hover {
+    box-shadow: 4px 10px 20px rgba(255, 0, 102, 0.5);
+    transform: translateY(-4px);
+}
+
+.resume-link {
     text-decoration: none;
-    margin: 60px;
 }
 
-.logo:hover {
-    transform: scale(1.1);
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
