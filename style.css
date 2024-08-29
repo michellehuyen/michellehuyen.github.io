@@ -4,11 +4,13 @@
     padding: 0;
 }
 
+
 body {
-    font-family: "DM Sans", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
     overflow-x: hidden;
-    background: url('./imgs/holographic.jpg') no-repeat center center fixed;
+    background: url('./imgs/pink_gradient.png') no-repeat center center fixed;
     background-size: cover;
+    color: rgb(78, 55, 55);
 }
 
 .navbar-nav {
@@ -18,7 +20,8 @@ body {
 
 .navbar-brand {
     font-family: "DM Serif Display", serif;
-    color: rgb(201, 94, 110);
+    color: rgb(255, 255, 255);
+    pointer-events: none;
 }
 
 .nav-item {
@@ -43,14 +46,15 @@ body {
 }
 
 .about-container {
-    padding-top: 25px;
+    padding-top: 30px;
     padding-bottom: 25px;
     z-index: 1;
 }
 
-h1, h2 {
+h1, h2, p {
     margin: 0;
     font-family: "Noto Serif", serif;
+    pointer-events: none;
 }
 
 h1 {
@@ -64,6 +68,7 @@ h2 {
 
 p {
     font-size: 1.2rem;
+    pointer-events: none;
 }
 
 #me {
@@ -110,12 +115,12 @@ p {
     border-radius: 50px;
     background: linear-gradient(200deg, #e66465, #9198e5);
     padding: 15px 30px;
-    box-shadow: 4px 4px 15px rgba(255, 0, 102, 0.3);
+    box-shadow: 4px 4px 15px rgba(223, 100, 149, 0.3);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .resume-btn:hover {
-    box-shadow: 4px 10px 20px rgba(255, 0, 102, 0.5);
+    box-shadow: 8px 10px 20px rgba(223, 100, 149, 0.5);
     transform: translateY(-4px);
 }
 
